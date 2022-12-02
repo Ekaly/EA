@@ -22,7 +22,9 @@ public class MenuController {
         Texts.ingressoModalidadeText();
         any = scanner.nextDouble();
         ingresso.setEscolhaMeiaOuInteira(any);
+
         if (!ingresso.getDecision()) System.out.println("Valor total: " +(ingresso.getValorTotal()+ingressoVip.getValorTotalVip()));
+
         if (ingresso.getDecision() & ingresso.getBoolVip()) {
             System.out.println(ingressoVip.setEscolhaMeiaOuInteiraVip(any) + "\nValor total: "+ (ingresso.getValorTotal() + ingressoVip.getValorTotalVip()));
         }else if (ingresso.getDecision() & !ingresso.getBoolVip()) {
@@ -41,6 +43,7 @@ public class MenuController {
             Texts.vipText2();
             ingresso.setVip(filme.setfilme3D(scanner.nextInt()));
             ingresso.getVip();
+
             if (procedural) {
                 ingressoTipo();
             }
