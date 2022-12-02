@@ -47,6 +47,7 @@ public class MenuController {
             if (procedural) {
                 ingressoTipo();
             }
+            
         }else{
             System.out.println("Você já possui a categoria Vip!");
         }
