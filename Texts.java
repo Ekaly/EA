@@ -81,4 +81,10 @@ public class Texts {
         System.out.println("ESCOLHA O TIPO DE INGRESSO");
         System.out.println("--------------------------");
     }
+
+    public static void listaDeFilmes() {
+        System.out.println("-------------------------");
+        System.out.println("-----LISTA DE FILMES-----");
+        System.out.println("-------------------------");
+    }
 }

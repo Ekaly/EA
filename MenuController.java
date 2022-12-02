@@ -12,13 +12,12 @@ public class MenuController {
     static double any;
 
     void verFilmes() {
-        System.out.println("-------------------------");
-        System.out.println("-----LISTA DE FILMES-----");
-        System.out.println("-------------------------");
+        Texts.listaDeFilmes();
         filme.filmesDisponiveis();
     }
 
     void ingressoTipo() {
+        Texts.titleTipoIngresso();
         Texts.ingressoModalidadeText();
         any = scanner.nextDouble();
         ingresso.setEscolhaMeiaOuInteira(any);
@@ -47,7 +46,7 @@ public class MenuController {
             if (procedural) {
                 ingressoTipo();
             }
-            
+
         }else{
             System.out.println("Você já possui a categoria Vip!");
         }
